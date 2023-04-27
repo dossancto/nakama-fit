@@ -1,3 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 #errorBox{
   color: red;
+}
+
+.padding{
+  height: 150vh;
+}
+
+.red {
+  background-color: #ff4321;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.white-color{
+  color: white;
 }

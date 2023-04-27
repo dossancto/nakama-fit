@@ -7,8 +7,14 @@ const imcDesc = document.getElementById("imc_desc");
 
 // TODO: Add all other messages
 const IMCDATA = [
-  { val: 18.5, msg: "alguam coisa" },
-  { val: 25, msg: "alguma coisa 2" },
+  { val: 0, msg: "Baixo peso muito grave" },
+  { val: 16, msg: "Baixo peso grave" },
+  { val: 17, msg: "Baixo peso" },
+  { val: 18.5, msg: "Peso normal" },
+  { val: 25, msg: "Sobrepeso" },
+  { val: 30, msg: "Obesidade grau I" },
+  { val: 35, msg: "Obesidade grau II" },
+  { val: 40, msg: "Obesidade grau III" },
 ].sort((a, b) => b.val - a.val)
 
 pesoField.addEventListener('keyup', calcImc)
@@ -34,44 +40,6 @@ function validNumberInfo(n) {
   if (isNaN(n)) return { valid: false, err: "The value is not a number" }
 
   return { valid: true, err: null }
-}
-
-/**
-  * Verifies if is a valid Peso.
-  * @param peso as `float`. "peso" is the user weight.
-  * @returns a object `{valid: boolean, err: string}`.
-  * If valid returns err as `null`
-*/
-function validPeso(peso) {
-  const valid = validNumberInfo(peso)
-  if (!valid.valid) return valid
-
-  /*
-    * Validações específicas para peso (se existir ne)
-    * Estrutura do retorno
-  */
-  //if (invalidOption) return { valid: false, err: "A error message" }
-
-  return { valid: true, err: null }
-}
-
-/**
-  * Verifies if is a valid altura.
-  * @param altura as `float`. "altura" is the user weight.
-  * @returns a object `{valid: boolean, err: string}`.
-  * If valid returns err as `null`
-*/
-function validAltura(altura) {
-  const valid = validNumberInfo(altura)
-  if (!valid.valid) return valid
-
-  /*
-    * Validações específicas para Altura (se existir ne)
-    * Estrutura do retorno
-  */
-  // if (invalidOption) return { valid: false, err: "A error message" }
-
-  return valid
 }
 
 // TODO: Add element to highlight
@@ -105,8 +73,8 @@ function calcImc() {
   const peso = parseFloat(pesoField.value);
   const altura = parseFloat(alturaField.value);
 
-  const pesoValid = validPeso(peso);
-  const alturaValid = validAltura(altura);
+  const pesoValid = validNumberInfo(peso);
+  const alturaValid = validNumberInfo(altura);
 
   if (!pesoValid.valid) {
     showErrorMessage(pesoValid.err)
