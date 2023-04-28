@@ -93,7 +93,7 @@ function calcImc() {
   const imcresult = imc(peso, altura);
 
   const desc = getDescByImcResult(imcresult)
+  imcNum.textContent = imcresult.toFixed(2);
 
-  imcNum.textContent = imcresult;
   imcDesc.textContent = desc;
 }

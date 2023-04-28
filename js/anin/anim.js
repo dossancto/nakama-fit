@@ -60,13 +60,15 @@ function prepareFadeinAnimation(element, args) {
 
   const direction = args.find(c => c.includes(baseText));
 
+  console.log(direction)
+
   if (!direction) {
     return
   }
 
   switch (direction.replace(baseText, '')) {
     case "bottom":
-      element.style.transform = `translateY(${level}px)`
+      element.style.transform = `translateY(${-level}px)`
       break
 
     case "left":
