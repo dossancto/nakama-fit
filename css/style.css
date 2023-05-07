@@ -1,8 +1,14 @@
 *{
-  font-family: 'Staatliches', serif;
-  box-sizing: border-box;
+  border: 0;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 #errorBox{
@@ -27,10 +33,6 @@
   color: white;
 }
 
-.container{
-  padding: 0px 10em;
-}
-
 input{
   border: 1px solid #2a2a2a;
   border-radius: 5px;
@@ -48,3 +50,73 @@ form{
 .field{
   margin-right: 120px;
 }
+
+nav{
+  width: 109%;
+  height: 50px;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 0 5%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: .3s;
+}
+
+.nav-selected{
+  color: #ff4321;
+}
+
+.pages {
+  overflow: hidden;
+  /* background-color: blue; */
+  width: 100%;
+}
+
+.container{
+  margin: 0 5%;
+  margin-top: 100px;
+  width: 90%;
+  min-height: 75vh;
+  display: flex;
+}
+
+h1{
+  margin-bottom: 20px;
+}
+
+footer{
+  width: 100%;
+  background-color: #2a2a2a;
+  height: 50px;
+  margin-top: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+footer *{
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.red{
+  background-color: #f00;
+  width: 300px;
+  height: 300px;
+}
+

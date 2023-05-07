@@ -1,0 +1,24 @@
+.hidden-page{
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  top: 13%;
+  z-index: 99;
+  width: 100%;
+  transform: translateX(500px);
+  filter: blur(120px);
+  transition: 1.5s ease-in-out .2s;
+}
+
+.hidden-page * {
+  height: 0;
+}
+
+.visibile-page{
+  visibility: visible;
+  position: relative;
+  animation: down 1s ease-in-out 0.2s forwards;
+  background-color: white;
+  width: 100%;
+  opacity: 1;
+}
