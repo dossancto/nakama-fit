@@ -10,6 +10,8 @@
 body{
     overflow-x: hidden;
     background-image: url("../img/fundo.png");
+    background-color: #0c0c0c;
+    color: #fff;
 }
 
 #errorBox{
@@ -52,7 +54,7 @@ form{
 }
 
 nav{
-  width: 109%;
+  width: 100%;
   height: 50px;
   background-color: #2a2a2a;
   display: flex;
@@ -85,12 +87,24 @@ nav ul li a {
   width: 100%;
 }
 
+.pages #garou{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 800px;
+  user-select: none;
+}
+
 .container{
   margin: 0 5%;
   margin-top: 100px;
   width: 90%;
   min-height: 75vh;
   display: flex;
+}
+
+.container #teste{
+  display: inline-block;
 }
 
 h1{
@@ -106,6 +120,7 @@ footer{
   display: flex;
   align-items: center;
   padding: 0 10%;
+  bottom: 0;
 }
 
 footer *{
