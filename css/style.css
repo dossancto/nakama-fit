@@ -9,6 +9,7 @@
 
 body{
     overflow-x: hidden;
+    background-image: url("../img/fundo.png");
 }
 
 #errorBox{
@@ -30,7 +31,6 @@ body{
 }
 
 .white-color{
-  color: white;
 }
 
 input{
