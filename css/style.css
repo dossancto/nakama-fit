@@ -3,12 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 100%;
+  /* max-width: 100%; */
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
 body{
   background-color: #1A1919;
+  overflow-x: hidden;
 }
 
 .container{
@@ -31,8 +32,18 @@ nav{
    color: white;
 }
 
-.launchpage{
+section{
   color: #fff;
+
+}
+
+.launchpage{
+  height: 100vh;
+}
+
+.wave-1{
+  width: 100wh;
+  margin: 0;
 }
 
 .launchpage *{
@@ -59,6 +70,10 @@ nav{
   width: 420px;
 }
 
+.about{
+  background: linear-gradient(to bottom, #2B40B2, #282828);
+}
+
 .mancha-1{
   position: absolute;
   right: 0;
@@ -69,7 +84,7 @@ nav{
 
 .button-cta {
   outline: none;
-  background-color: transparent;
+  background-color: #1A1919;
   border: 1px solid #7D6DCA;
   padding: 15px 10px;
   width: 150px;
@@ -85,19 +100,11 @@ nav{
   color: white;
 }
 
-@media screen and (max-width: 600px){
-  .container{
-    margin-top: 20%;
-  }
-
-  .button-cta{
-    background-color: #1A1919;
-  }
-
-  .mancha-1{
-    right: -140px;
-  }
-
+.bubble{
+  width: 300px;
 }
 
-
+.about .container{
+  padding-top: 80px;
+  margin-top: 0;
+}

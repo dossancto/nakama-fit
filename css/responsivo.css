@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px){
+  .container{
+    margin-top: 20%;
+  }
+
+  .mancha-1{
+    right: -140px;
+  }
+}
+
+
