@@ -81,6 +81,7 @@ section{
 
 .about{
   background: linear-gradient(to bottom, #2B40B2, #282828);
+  height: 620px;
 }  
 
 .mancha-1{
@@ -146,4 +147,39 @@ section{
 .about .container{
   padding-top: 80px;
   margin-top: 0;
+}
+
+.planos{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.planos h1{
+  font-size: 50px;
+  margin-bottom: 70px;
+}
+
+.plano-cards{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.plano-card{
+  width: 320px;
+  height: 450px;
+  background-color: #282828;
+  border-radius: 25px;
+  margin-bottom: 50px;
+}
+
+.plano-card-header{
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  width: 100%;
+  height: 25%;
+  background-color: #111;
 }
