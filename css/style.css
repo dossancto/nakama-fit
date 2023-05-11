@@ -109,8 +109,33 @@ section{
   color: white;
 }
 
+.bubles{
+  display: flex;
+  justify-content: space-between;
+}
+
 .bubble{
   width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.bubble .buble-text{
+  display: flex;
+  flex-direction: column;
+  transform: translateY(190px) translateX(55px);
+  width: 200px;
+}
+
+.bubble h4{
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.text-purple{
+  color: #7D6DCA;
+  text-transform: uppercase;
 }
 
 .about{

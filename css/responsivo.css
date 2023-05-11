@@ -10,6 +10,11 @@
   .launchpage h1{
     font-size: 50px;
   }
+
+  .bubles{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 
