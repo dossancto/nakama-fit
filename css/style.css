@@ -261,24 +261,31 @@ section{
 .btn-assinatura{
   font-size: 22px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background-color: white;
+  background-color: #7D6DCA;
+  color: #fff;
   border-radius: 5px;
   width: 150px;
-  height: 35px;
+  height: 45px;
   cursor: pointer;
 }
 
 .btn-assinatura:hover{
-  transition-duration: 0.2s;
+  transition: .3s ease-in-out;
   background-color: #111;
-  color: white;
 }
 
 .btn-assinatura::before{
   content: '';
   width: 150px;
-  height: 35px;
+  height: 45px;
+  border-radius: 5px;
   border: 2px solid #7D6DCA;
-  transform: translateX(-15px) translateY(-10px);
+  transform: translateX(-15px) translateY(-15px);
   position: absolute;
+  transition: .2s;
+}
+
+.btn-assinatura:hover::before{
+  transform: translateX(-20px) translateY(-10px);
+  opacity: 0;
 }
