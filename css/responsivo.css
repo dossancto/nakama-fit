@@ -1,0 +1,29 @@
+@media screen and (max-width: 600px){
+  .container{
+    margin-top: 20%;
+  }
+
+  .mancha-1{
+    right: -140px;
+  }
+
+  .launchpage h1{
+    font-size: 50px;
+  }
+
+  .bubles{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+
+
+@media screen and (max-width: 1250px){
+  .plano-cards{
+    justify-content: initial;
+    align-items: center;
+    flex-direction: column;
+  }
+}

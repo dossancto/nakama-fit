@@ -1,0 +1,10 @@
+.animated{
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s, transform 2s;
+}
+
+.animated-anim-fadein{
+  transform: translateY(100px);
+}
+
