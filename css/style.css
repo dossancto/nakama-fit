@@ -15,7 +15,6 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-thumb{
-  /* width: 0px; */
   background-color: var(--light-purple);
 }
 
@@ -62,17 +61,41 @@ nav .navbar{
 }
 
 section{
+  width: 100%;
   color: #fff;
 }
 
+.section-transition{
+ transform: translateY(-170px);
+  width: 100%;
+}
+
+.about-transition{
+  position: absolute;
+  background: red;
+  background: #2B40B2;
+ transform: translateY(-10px);
+  width: 100%;
+  height: 100%;
+}
+
 .launchpage{
-  height: 100vh;
+  height: 750px;
 }
 
 .wave-1{
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.wave-2{
+  position: absolute;
+  left: 0;
+  transform: translateY(-120px);
+  height: 100vh;
+  z-index: -1;
+
 }
 
 .launchpage *{
@@ -99,15 +122,15 @@ section{
 }
 
 .about{
-  background: linear-gradient(to bottom, #2B40B2, transparent);
+  background: linear-gradient(to bottom, #2B40B2, #282828);
   height: 620px;
 }  
 
 .mancha-1{
   position: absolute;
   right: 0;
-  bottom: 0;
-  height: 100%;
+  top: 0;
+  height: 110vh;
   z-index: -2;
 }
 
@@ -139,6 +162,12 @@ section{
   height: 300px;
   display: flex;
   flex-direction: column-reverse;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.bubble:hover{
+  transform: scale(1.05) translateY(-10px);
 }
 
 .bubble .buble-text{
@@ -185,7 +214,6 @@ section{
   width: 100%;
   height: auto;
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
 }
 
@@ -297,7 +325,6 @@ section{
 
 .contact .text{
   width: 60%;
-  /* background-color: blue; */
 }
 
 .contact .text *{
@@ -359,16 +386,44 @@ form button{
 
 .info-blocks .info-block{
   width: 100%;
-  /* background-color: blue; */
   margin-bottom: 20px;
   height: 150px;
 }
 
-
-/* .info-blocks .info-block h2{ */
-/*   width: 100%; */
-/* } */
-
 .info-blocks .info-block p{
   font-size: 12px;
+}
+
+.pos-end{
+  display: flex;
+  justify-content: end;
+}
+
+.aulas{
+  background: linear-gradient(to bottom, #282828, #1a1a1a);
+  /* background: red; */
+  z-index: -2;
+}
+
+.aulas .aulas-cards{
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.aula-card{
+  margin: 20px 10px;
+  width: 384px;
+  height: 220px;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: end;
+  padding: 25px 30px;
+}
+
+.gym{
+  background: linear-gradient(to bottom, #F6F6F6, #5F5CC1);
+  height: 800px;
+
 }
