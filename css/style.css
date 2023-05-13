@@ -16,7 +16,7 @@ body::-webkit-scrollbar{
 
 body::-webkit-scrollbar-thumb{
   /* width: 0px; */
-  background-color: #7D6DCA;
+  background-color: var(--light-purple);
 }
 
 body{
@@ -52,7 +52,7 @@ nav:hover .navbar{
 nav .navbar{
    height: 40px;
    width: 40%;
-   border: 1px solid #7D6DCA;
+   border: 1px solid var(--light-purple);
    border-radius: 10px;
    display: flex;
    align-items: center;
@@ -70,7 +70,7 @@ section{
 }
 
 .wave-1{
-  width: 100wh;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -80,7 +80,7 @@ section{
 }
 
 .launchpage .japa{
-   color: #7D6DCA;
+   color: var(--light-purple);
 }
 
 .launchpage h1{
@@ -114,7 +114,7 @@ section{
 .button-cta {
   outline: none;
   background-color: #1A1919;
-  border: 1px solid #7D6DCA;
+  border: 1px solid var(--light-purple);
   padding: 15px 10px;
   width: 150px;
   color: #fff;
@@ -125,7 +125,7 @@ section{
 }
 
 .button-cta:hover{
-  background-color: #7D6DCA;
+  background-color: var(--light-purple);
   color: white;
 }
 
@@ -154,7 +154,7 @@ section{
 }
 
 .text-purple{
-  color: #7D6DCA;
+  color: var(--light-purple);
   text-transform: uppercase;
 }
 
@@ -261,7 +261,7 @@ section{
 .btn-assinatura{
   font-size: 22px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background-color: #7D6DCA;
+  background-color: var(--light-purple);
   color: #fff;
   border-radius: 5px;
   width: 150px;
@@ -279,7 +279,7 @@ section{
   width: 150px;
   height: 45px;
   border-radius: 5px;
-  border: 2px solid #7D6DCA;
+  border: 2px solid var(--light-purple);
   transform: translateX(-15px) translateY(-15px);
   position: absolute;
   transition: .2s;
@@ -288,4 +288,87 @@ section{
 .btn-assinatura:hover::before{
   transform: translateX(-20px) translateY(-10px);
   opacity: 0;
+}
+
+.contact .container{
+  display: flex;
+  padding: 0px 70px;
+} 
+
+.contact .text{
+  width: 60%;
+  /* background-color: blue; */
+}
+
+.contact .text *{
+  width: 80%;
+}
+
+.contact .text h2{
+  font-size: 30px;
+}
+
+
+.contact form{
+  width: 40%;
+}
+
+.contact hr {
+  width: 100px;
+  background-color: var(--light-purple);
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 100px;
+}
+
+form .fields{
+  margin-top: 20px;
+}
+
+form .fields input,
+form .fields textarea{
+  background-color: white;
+  font-size: 15px;
+  padding: 10px 12px;
+  width: 90%;
+  margin-bottom: 25px;
+  outline: none;
+}
+
+form .fields textarea{
+  height: 125px;
+}
+
+form button{
+  width: 90%;
+  padding: 7px 12px;
+  background-color: var(--light-purple);
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.info-blocks{
+  width: 70%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.info-blocks .info-block{
+  width: 100%;
+  /* background-color: blue; */
+  margin-bottom: 20px;
+  height: 150px;
+}
+
+
+/* .info-blocks .info-block h2{ */
+/*   width: 100%; */
+/* } */
+
+.info-blocks .info-block p{
+  font-size: 12px;
 }
