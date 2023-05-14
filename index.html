@@ -14,6 +14,7 @@
   <link href="./css/responsivo.css" rel="stylesheet">
 
   <script defer src="js/anin/anim.js"></script>
+  <script defer src="js/commentsection.js"></script>
 </head>
 
 <body>
@@ -32,7 +33,8 @@
       <img src="img/mancha.svg" alt="" class="mancha-1" draggable="false">
 
       <!-- <button class="button-cta">Baixe Agora !</button> -->
-      <svg width="400" height="67" viewBox="0 0 400 67" fill="none" xmlns="http://www.w3.org/2000/svg" class="button-cta">
+      <svg width="400" height="67" viewBox="0 0 400 67" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="button-cta">
         <path d="M58.2279 0L0 67H260.284L321 0H58.2279Z" fill="transparent" class="button-cta-outline" />
         <path d="M58.2279 0L0 67H260.284L321 0H58.2279Z" fill="#6956C8" />
         <path
@@ -105,13 +107,141 @@
     </div>
   </section>
 
+  <section class="personaltrainers">
+    <div class="container">
+      <div class="trainers">
+        <div class="trainer">
+          <p class="trainee-name">
+            Alisson Watson
+          </p>
+        </div>
+        <div class="trainer">
+          <p class="trainee-name">
+            J.F. Kennedy
+          </p>
+        </div>
+        <div class="trainer">
+          <p class="trainee-name">
+            Mr. Potter
+          </p>
+        </div>
+        <div class="trainer">
+          <p class="trainee-name">
+            Mr. Cupcake
+          </p>
+        </div>
+
+        <div class="trainer">
+          <p class="trainee-name">
+            Good Deeds
+          </p>
+        </div>
+        <div class="trainer">
+          <p class="trainee-name">
+            Hairy Strongman
+          </p>
+        </div>
+        <div class="trainer">
+          <p class="trainee-name">
+            Vice Pres. J.
+          </p>
+        </div>
+      </div>
+      <!-- <img class="trainers-textimage" draggable="false" src="img/personaltrainers.png"> -->
+
+      <div class="whychooseus">
+        <p class="whytxt">Why choose us?</p>
+        <div class="qualities-container">
+          <div class="qualitie">
+            <img draggable="false" src="img/qual1.png">
+            <p class="qualitie-desc">
+              Variedade de opções de <span class="qual-purple">treinamento</span>
+            </p>
+          </div>
+          <div class="qualitie">
+            <img draggable="false" src="img/qual2.png">
+            <p class="qualitie-desc">
+              Equipamentos modernos e de <span class="qual-purple">alta qualidade</span>
+            </p>
+          </div>
+          <div class="qualitie">
+            <img draggable="false" src="img/qual3.png">
+            <p class="qualitie-desc">
+              Ambiente acolhedor e <span class="qual-purple">amigável</span>
+            </p>
+          </div>
+          <div class="qualitie">
+            <img draggable="false" src="img/qual4.png">
+            <p class="qualitie-desc">
+              Um café <span class="qual-purple">tunado</span> de K9 e afins
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experiences">
+    <div class="container">
+
+      <div id="commentsection" data-position="0">
+        <p class="active">
+          “I've been a member of Nakama for the past 6
+          months and it has been an amazing experience.
+          The trainers are knowledgeable and supportive,
+          the equipment is top-notch, and the community of
+          members is friendly and encouraging.”
+          <span class="clientname">
+            Harry Potter
+          </span>
+        </p>
+        <p>
+          “KAKAKA I've been a member of Nakama for the past 6
+          months and it has been an amazing experience.
+          The trainers are knowledgeable and supportive,
+          the equipment is top-notch, and the community of
+          members is friendly and encouraging.”
+          <span class="clientname">
+            Harry Slother
+          </span>
+        </p>
+        <p>
+          “RSRSRSRSRSRS I've been a member of Nakama for the past 6
+          months and it has been an amazing experience.
+          The trainers are knowledgeable and supportive,
+          the equipment is top-notch, and the community of
+          members is friendly and encouraging.”
+          <span class="clientname">
+            Garry Hotter
+          </span>
+        </p>
+        <div class="slidecontrol">
+          <div class="slideposition">
+            <label for="slide1"></label>
+            <input type="radio" name="slide" id="slide1">
+            <label for="slide2"></label>
+            <input type="radio" name="slide" id="slide2">
+            <label for="slide3"></label>
+            <input type="radio" name="slide" id="slide3">
+          </div>
+
+          <button id="leftarrow">
+            <img draggable="false" src="img/leftarrow.png" />
+          </button>
+          <button id="rightarrow">
+            <img draggable="false" src="img/rightarrow.png" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
   <div class="container">
     <section class="planos">
-      <h1>NOSSOS <span class="text-purple">PLANOS</span> </h1>
+      <h1>NOSSOS <span class="text-purple"> PLANOS</span> </h1>
       <div class="plano-cards">
         <!-- PRIMEIRO CARD -->
         <div class="plano-card" id="advanced-header">
-          <div class="plano-card-header">
+          <div class="plano-card-header" id="begginer">
           </div>
           <div class="plano-card-info">
             <h4>BEGGINER</h4>
@@ -119,11 +249,10 @@
           <div class="plano-card-body">
             <h6 class="plan-price">R$ 39,90</h6>
             <ul class="plan-benefits">
-              <li>Alguma coisa</li>
-              <li>Alguma coisa</li>
-              <li>Alguma coisa</li>
-              <li>Alguma coisa</li>
-              <li>Alguma coisa</li>
+              <li>Free Hand</li>
+              <li>Gym Fitness</li>
+              <li>Weight Loss</li>
+              <li>Personal Trainer</li>
             </ul>
             <button class="btn-assinatura">Buy Now</button>
           </div>
@@ -131,44 +260,74 @@
 
         <!-- SEGUNDO CARD -->
         <div class="plano-card" id="advanced-header">
-          <div class="plano-card-header">
+          <div class="plano-card-header" id="intermediate">
           </div>
           <div class="plano-card-info">
-            <h4>Intermediate</h4>
+            <h4>INTERMEDIATE</h4>
           </div>
           <div class="plano-card-body">
             <h6 class="plan-price">R$ 69,90</h6>
             <ul class="plan-benefits">
-              <li>Alguma coisa</li>
-              <li>Alguma coisa</li>
-              <li>Alguma coisa</li>
-              <li>Alguma coisa</li>
-              <li>Alguma coisa</li>
+              <li>Free Hand</li>
+              <li>Gym Fitness</li>
+              <li>Weight Loss</li>
+              <li>Personal Trainer</li>
+              <li>Cycling</li>
+              <li>Bring a friend</li>
             </ul>
-            <button class="btn-assinatura">Buy Now</button>
+            <button class="btn-assinatura" id="btn-middle">Buy Now</button>
           </div>
         </div>
 
         <!-- TERCEIRO CARD -->
         <div class="plano-card" id="advanced-header">
-          <div class="plano-card-header">
-            <img src="" alt="" draggable="false">
+          <div class="plano-card-header" id="advanced">
+            <img src="" alt="">
           </div>
           <div class="plano-card-info">
-            <h4>Advanced</h4>
+            <h4>ADVANCED</h4>
           </div>
           <div class="plano-card-body">
             <h6 class="plan-price">R$ 89,90</h6>
             <ul class="plan-benefits">
-              <li>Alguma coisa</li>
-              <li>Alguma coisa</li>
-              <li>Alguma coisa</li>
-              <li>Alguma coisa</li>
-              <li>Alguma coisa</li>
+              <li>Free Hand</li>
+              <li>Gym Fitness</li>
+              <li>Weight Loss</li>
+              <li>Personal Trainer</li>
             </ul>
             <button class="btn-assinatura">Buy Now</button>
           </div>
         </div>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+
+    <section class="imc">
+      <img draggable="false" class="imcimage" src="img/imc.png" alt="">
+      <p class="calcmsg">
+        Calcule <a class="purple">seu</a> IMC
+      </p>
+      <p class="imcdesc">
+        Easily determine your body mass index with our
+        accurate calculation tool.
+      </p>
+      <div class="imcfactors-container">
+        <input class="imcfactors" id="peso" type="text" placeholder="Seu peso/kg"></input>
+        <input class="imcfactors" id="altura" type="text" placeholder="Sua altura/cm"></input>
+        <input class="imcfactors" id="idade" type="text" placeholder="Sua idade"></input>
+        <div class="imcsex">
+          <input type="radio" class="lbl" id="maleslc" name="opcao">
+          <label for="opcao1"></label>
+          <p>MALE</p>
+          <input type="radio" class="lbl" id="femaleslc" name="opcap">
+          <label id="lbl-female" for="opcao2"></label>
+          <p>FEMALE</p>
+        </div>
+      </div>
+      <div class="imcresult">
+        <p class="result" id="result">00.0</p>
+        <p class="imccat" id="imc_desc">Categoria</p>
       </div>
     </section>
   </div>
