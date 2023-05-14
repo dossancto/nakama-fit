@@ -171,6 +171,90 @@ section{
   margin-top: 0;
 }
 
+.personaltrainers{
+  width: 100%;
+  height: 500px;
+}
+
+.personaltrainers .trainers{
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.trainers .trainer{
+  width: 290px;
+  height: 180px;
+  position: absolute;
+  display: flex;
+  align-items: end;
+  border-radius: 20px;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.trainer .trainee-name{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 720;
+  font-size: 28px;
+  line-height: 39px;
+
+  margin-left: 15px;
+  margin-bottom: 10px;
+  
+  color: #FFFFFF;
+  font-variation-settings: 'slnt' 0;  
+}
+
+.trainer:nth-child(1){
+  top: 0;
+  left: 0;
+  background-image: url("../img/trainer3.png");
+}
+
+.trainer:nth-child(2){
+  top: 0;
+  left: 300px;
+  background-image: url("../img/trainer1.png");
+}
+
+.trainer:nth-child(3){
+  top: 0;
+  left: 600px;
+  background-image: url("../img/trainer2.png");
+}
+
+.trainer:nth-child(4) {
+  top: 0;
+  left: 900px;
+  background-image: url("../img/trainer3.png");
+}
+
+
+.trainer:nth-child(5){
+  top: 210px;
+  left: 300px;
+  background-image: url("../img/trainer2.png");
+}
+
+.trainer:nth-child(6){
+  top: 210px;
+  left: 600px;
+  background-image: url("../img/trainer1.png");
+}
+
+.trainer:nth-child(7){
+  top: 210px;
+  left: 900px;
+  background-image: url("../img/trainer2.png");
+}
+
+.personaltrainers .trainers-textimage{
+  width: 500px;
+  margin-left: 60%;
+}
+
 .experiences{
   width: 100%;
   height: 600px;
