@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
   .container{
     margin-top: 20%;
   }
@@ -19,6 +19,10 @@
   .contact .info-blocks{
     display: flex;
     flex-direction: column;
+  }
+
+  .gym .container{
+    justify-content: center;
   }
 }
 
@@ -42,6 +46,7 @@
     align-items: center;
     width: 100%;
   }
+
 }
 
 @media screen and (max-width: 1250px){

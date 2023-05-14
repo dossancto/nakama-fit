@@ -72,7 +72,6 @@ section{
 
 .about-transition{
   position: absolute;
-  background: red;
   background: #2B40B2;
  transform: translateY(-10px);
   width: 100%;
@@ -419,7 +418,6 @@ form button{
 
 .aulas{
   background: linear-gradient(to bottom, #282828, #1a1a1a);
-  /* background: red; */
   z-index: 2;
 }
 
@@ -442,6 +440,40 @@ form button{
 
 .gym{
   background: linear-gradient(to bottom, #F6F6F6, #5F5CC1);
-  height: 800px;
+  min-height: 800px;
+}
 
+.gym .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gym .icons{
+  /* background-color: red; */
+  width: 350px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15%;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* background-color: pink; */
+}
+
+.gym .icons img{
+  /* width: 100%; */
+  height: 25%;
+  margin-bottom: 45%;
+  /* background-color: yellow; */
+}
+
+.gym .logo{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.gym .logo img{
+  width: 400px;
 }
