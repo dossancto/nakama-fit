@@ -94,7 +94,7 @@ section{
   left: 0;
   /* transform: translateY(-120px); */
   height: 80vh;
-  z-index: -1;
+  z-index: -10;
 
 }
 
@@ -232,6 +232,7 @@ section{
   height: auto;
   display: flex;
   justify-content: space-between;
+  z-index: 3;
 }
 
 .plano-card{
