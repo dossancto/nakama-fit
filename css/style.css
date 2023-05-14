@@ -134,21 +134,28 @@ section{
 }
 
 .button-cta {
-  outline: none;
-  background-color: #1A1919;
-  border: 1px solid var(--light-purple);
-  padding: 15px 10px;
-  width: 150px;
-  color: #fff;
-  border-radius: 10px;
+  width: 300px;
   margin-top: 50px;
-  transition: .2s ease-in-out;
   cursor: pointer;
 }
 
-.button-cta:hover{
-  background-color: var(--light-purple);
-  color: white;
+.button-cta path:nth-of-type(2){
+  fill: var(--purple);
+  transition: .3s ease-in-out;
+}
+.button-cta-outline {
+  fill: transparent;
+  stroke: transparent;
+  transition: .3s;
+}
+
+.button-cta:hover path:nth-of-type(2){
+  fill: black;
+}
+
+.button-cta:hover  .button-cta-outline{
+  transform: translate(-5px, -10px);
+  stroke: var(--purple);
 }
 
 .aboutus{
