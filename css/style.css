@@ -66,7 +66,7 @@ section{
 }
 
 .section-transition{
- transform: translateY(-170px);
+ transform: translateY(-80%);
   width: 100%;
 }
 
@@ -80,7 +80,7 @@ section{
 }
 
 .launchpage{
-  height: 750px;
+  height: 80vh;
 }
 
 .wave-1{
@@ -92,8 +92,8 @@ section{
 .wave-2{
   position: absolute;
   left: 0;
-  transform: translateY(-120px);
-  height: 100vh;
+  /* transform: translateY(-120px); */
+  height: 80vh;
   z-index: -1;
 
 }
@@ -123,7 +123,7 @@ section{
 
 .about{
   background: linear-gradient(to bottom, #2B40B2, #282828);
-  height: 620px;
+  min-height: 620px;
 }  
 
 .mancha-1{
@@ -152,34 +152,51 @@ section{
   color: white;
 }
 
-.bubles{
+.aboutus{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .bubble{
-  width: 300px;
-  height: 300px;
-  display: flex;
-  flex-direction: column-reverse;
+  width: 600px;
+}
+
+.bubble img{
+  height: 400px;
   cursor: pointer;
   transition: .3s ease-in-out;
 }
 
-.bubble:hover{
-  transform: scale(1.05) translateY(-10px);
+.about-text{
+  font-size: 50px;
+  width: 500px;
+  margin-left: 300px;
+  max-width: 800px;
 }
 
-.bubble .buble-text{
+
+.about-text p{
+  font-size: 20px;
+}
+
+.about-topic {
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  transform: translateY(190px) translateX(55px);
-  width: 200px;
 }
 
-.bubble h4{
-  margin-bottom: 20px;
-  font-size: 25px;
+.about-topic p{
+  width: 70%;
+  margin: 0 30px;
+}
+
+.about-topic img{
+  width: 120px;
+  height: 120px;
+}
+
+.bubble img:hover{
+  transform: scale(1.05) translateY(-10px);
 }
 
 .text-purple{
@@ -340,7 +357,7 @@ section{
   width: 40%;
 }
 
-.contact hr {
+hr {
   width: 100px;
   background-color: var(--light-purple);
   margin-top: 20px;
@@ -402,7 +419,7 @@ form button{
 .aulas{
   background: linear-gradient(to bottom, #282828, #1a1a1a);
   /* background: red; */
-  z-index: -2;
+  z-index: 2;
 }
 
 .aulas .aulas-cards{

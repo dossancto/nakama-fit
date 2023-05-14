@@ -22,14 +22,6 @@
   }
 }
 
-@media screen and (max-width: 1250px){
-  .plano-cards{
-    justify-content: initial;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-
 @media screen and (max-width: 1000px){
   .contact .container{
     flex-direction: column;
@@ -51,3 +43,18 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 1250px){
+  .plano-cards{
+    justify-content: initial;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1600px){
+.about-text{
+    margin-left: 0;
+  }
+}
+
