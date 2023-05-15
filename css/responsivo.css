@@ -56,6 +56,9 @@
     flex-direction: column;
   }
 
+  .imc .imcimage{
+    display: none;
+  }
 
   .commentsection .commentimage{
     display: none;

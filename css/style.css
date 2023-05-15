@@ -134,7 +134,7 @@ section{
 }
 
 .about{
-  background: linear-gradient(to bottom, #2B40B2, #282828);
+  background: linear-gradient(to bottom, #2B40B2, #1a1a1a);
   min-height: 620px;
 }  
 
@@ -973,9 +973,8 @@ form button{
 }
 
 .imc .imcimage{
-  width: 2400px;
-  right: -700px;
-  /* margin-top: 70px; */
+  width: 340px;
+  right: 10%;
   position: absolute;
 }
 
@@ -1012,6 +1011,7 @@ form button{
   margin-top: 31px;
 
   display: flex;
+  /* flex-direction: column; */
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -1088,7 +1088,7 @@ form button{
   align-items: center;
   justify-content: center;
   
-  background: #282828;
+  /* background: #282828; */
   border-radius: 10px;
 }
 
@@ -1107,7 +1107,7 @@ form button{
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 35px;
   line-height: 58px;
   text-align: center;
   
@@ -1174,6 +1174,47 @@ footer .footer-texts ul li:nth-child(1) {
 
 footer .footer-logo{
   width: 300px;
-  /* background-color: blue; */
   min-height: 250px;
+}
+
+.wecards{
+  width: 100%;
+  /* background-color: red; */
+}
+
+.all-wecards{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.wecard{
+  width: 300px;
+  height: 250px;
+  margin: 0px 15px;
+  margin-bottom: 20px;
+}
+
+.wecard:nth-child(2){
+  background-image: url('../img/cafe.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.wecard:nth-child(3){
+  background-image: url('../img/bombado.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.wecard ul{
+  list-style: none;
+}
+
+.wecard li:nth-child(1){
+  list-style: none;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 10px;
+
 }
