@@ -8,10 +8,13 @@ let navopenned = false;
 function navToggle() {
   if (navopenned) {
     nav.classList.remove("nav-open")
+    navbarToggle.classList.remove("blacknavicon")
   }
 
-  else{
+
+  else {
     nav.classList.add("nav-open")
+    navbarToggle.classList.add("blacknavicon")
   }
 
   navopenned = !navopenned;

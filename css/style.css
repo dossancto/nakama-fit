@@ -43,14 +43,13 @@ body{
 nav{
   width: 100%;
   height: 80px;
-  background: linear-gradient(to bottom, black, transparent) ;
   position: fixed;
   display: flex;
   /* justify-content: center; */
   align-items: end;
   z-index: 99;
   padding: 0px 10%;
-  position: absolute;
+  position: fixed;
   /* background-color: pink; */
 }
 
@@ -58,16 +57,52 @@ nav #naviconToggle{
   cursor: pointer;
 }
 
-
-.nav-open{
-  background-color: red;
-  width: 100%;
-}
-
 .nav-content{
   width: 60%;
   height: 100px;
+  transform: translateX(-200px);
+  transition: 1s;
+  position: absolute;
+  z-index: -1;
+  top: 20%;
+  padding-left: 150px;
+  align-items: center;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
 }
+
+.blacknavicon path{
+  stroke: #1a1a1a;
+}
+
+.nav-open{
+  background-color: var(--purple);
+  width: 100%;
+  transform: translateX(-50px);
+  visibility: visible;
+  opacity: 1;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+}
+
+nav ul li{
+  margin-right: 30px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
 
 section{
   width: 100%;
