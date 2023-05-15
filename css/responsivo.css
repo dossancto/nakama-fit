@@ -55,6 +55,15 @@
     align-items: center;
     flex-direction: column;
   }
+
+
+  .commentsection .commentimage{
+    display: none;
+  }
+
+  .commentsection .commenttext{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1600px){

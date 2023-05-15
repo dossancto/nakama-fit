@@ -1,9 +1,12 @@
 const pesoField = document.getElementById("peso");
 const alturaField = document.getElementById("altura");
-const errorBox = document.getElementById("errorBox");
+// const errorBox = document.getElementById("errorBox");
 
-const imcNum = document.getElementById("imc_num");
+const imcNum = document.getElementById("result");
 const imcDesc = document.getElementById("imc_desc");
+
+const maleslc = document.getElementById("maleslc");
+const femaleslc = document.getElementById("femaleslc");
 
 // TODO: Add all other messages
 const IMCDATA = [
@@ -48,8 +51,14 @@ function validNumberInfo(n) {
   * @param message `string` the message to be showed
   *
 */
-function showErrorMessage(message) {
-  errorBox.textContent = message;
+function showErrorMessage(element, message) {
+  console.error(message)
+
+  element.classList.add("error-input");
+}
+
+function removeErrorMessage(element) {
+  element.classList.remove("error-input");
 }
 
 /**
@@ -60,9 +69,7 @@ function showErrorMessage(message) {
   * (because is probally the correct value)
 */
 function getDescByImcResult(imc) {
-  const desc = (IMCDATA.find(i => i.val <= imc) || IMCDATA[IMCDATA.length - 1]).msg;
-
-  return desc;
+  return (IMCDATA.find(i => i.val <= imc) || IMCDATA[IMCDATA.length - 1]).msg;
 }
 
 /**
@@ -70,30 +77,41 @@ function getDescByImcResult(imc) {
   * @param message `string` the message to be showed
 */
 function calcImc() {
-  const peso = parseFloat(pesoField.value);
-  const altura = parseFloat(alturaField.value);
+  const peso = pesoField.value;
 
-  const pesoValid = validNumberInfo(peso);
-  const alturaValid = validNumberInfo(altura);
+  const altura = alturaField.value;
 
-  if (!pesoValid.valid) {
-    showErrorMessage(pesoValid.err)
+  const pesoValid = validNumberInfo(parseFloat(peso));
+  const alturaValid = validNumberInfo(parseFloat(altura));
+
+  if (!pesoValid.valid && peso != "") {
+    showErrorMessage(pesoField, pesoValid.err)
     // Do something if the peso is not valid.
     return;
   }
 
-  if (!alturaValid.valid) {
-    showErrorMessage(alturaValid.err)
+  removeErrorMessage(pesoField)
+
+  if (!alturaValid.valid && altura != "") {
+    showErrorMessage(alturaField, alturaValid.err)
     // Do something if the altura is not valid.
     return;
   }
 
-  showErrorMessage("")
+  removeErrorMessage(alturaField)
 
-  const imcresult = imc(peso, altura);
+  if (altura == "" || peso == "")
+    return
 
-  const desc = getDescByImcResult(imcresult)
-  imcNum.textContent = imcresult.toFixed(2);
+  // showErrorMessage("")
 
-  imcDesc.textContent = desc;
+  const imcresult = imc(peso, altura) * 10000;
+  const desc = getDescByImcResult(imcresult);
+
+  // Garante que não apareça umnúmero muito alto pelo calculo realizado com 
+  // o usuário ainda digitando o valor da altura "peso / (altura * altura)".
+  if (imcresult < 100) {
+    imcNum.textContent = imcresult.toFixed(2);
+    imcDesc.textContent = desc;
+  }
 }
