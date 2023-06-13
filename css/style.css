@@ -163,6 +163,7 @@ section{
 
 .launchpage p {
   width: 620px;
+  max-width: 80%;
   color: #fff;
   font-size: 20px;
   opacity: 0.8;
@@ -180,6 +181,7 @@ section{
   top: 0;
   height: 110vh;
   z-index: -2;
+  max-width: 100%;
 }
 
 .button-cta {
@@ -210,7 +212,7 @@ section{
 .aboutus{
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  max-width: 100%;
 }
 
 .bubble{
@@ -218,7 +220,8 @@ section{
 }
 
 .bubble img{
-  height: 400px;
+  /* height: 400px; */
+  max-width: 100%;
   /* cursor: pointer; */
   /* transition: .3s ease-in-out; */
 }
@@ -233,7 +236,8 @@ section{
 
 .about-text p{
   margin-top: 5%;
-  font-size: 20px;
+  font-size: 15px;
+  max-width: 100%;
 }
 
 .about-topic {
@@ -1016,7 +1020,7 @@ form button{
 
 .imc .calcmsg, .purple{
   font-family: Inter;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 720;
   line-height: 77px;
   letter-spacing: 0em;
@@ -1024,9 +1028,6 @@ form button{
   font-variation-settings: 'slnt' 0;
 }
 
-.calcmsg{
-  text-transform: uppercase;
-}
 
 .purple{
   color: #7D6DCA;
@@ -1253,4 +1254,8 @@ footer .footer-logo{
   font-size: 25px;
   margin-bottom: 10px;
 
+}
+
+.ourteam .container *{
+  max-width: 100%;
 }
